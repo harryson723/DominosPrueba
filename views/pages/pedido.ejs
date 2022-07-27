@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/header.ejs') %>
+
+    <body>
+        <div class="conteiner">
+            <%- include('../partials/nav.ejs') %>
+                <section>
+                    <div class="elige">
+                        <h1>ELIGE TU TIENDA</h1>
+                    </div>
+                    <div class="domicilio">
+                        <b> ¿ESTA ORDEN ES A DOMICILIO O PARA RECOGER?</b>
+                    </div>
+                    <div class="formDiv">
+                        <form method="get" action="/menu">
+                            <div class="formContent">
+                                <label for="cedula">* Cedula:</label>
+                                <input type="cedula" name="cedula">
+                            </div>
+                            <div class="formContent">
+                                <label for="departamento">* Departamento:</label>
+                                <select name="departamento" id="departamento">
+                                    <option value="sd">- Selecciones un Departamento -</option>
+                                    <option value="Cundinamarca">Cundinamarca</option>
+                                </select>
+                            </div>
+                            <div class="formContent">
+                                <label for="ciudad">* Ciudad:</label>
+                                <select name="ciudad" id="ciudad">
+                                    <option value="ciudad">- Selecciones una Ciudad -</option>
+                                    <option value="Fusagasuga">Fusagasuga</option>
+                                </select>
+                            </div>
+                            <div class="formContent">
+                                <label for="direccion">* Direccion</label>
+                                <select name="direccion" id="direccion">
+                                    <option value="direccion">- Selecciones un tipo de Via -</option>
+                                    <option value="Anillo">Anillo</option>
+                                    <option value="Autopista">Autopista</option>
+                                    <option value="Avenida">Avenida</option>
+                                    <option value="Avenida Calle">Avenida Calle</option>
+                                    <option value="Avenida Carrera">Avenida Carrera</option>
+                                    <option value="Calle">Calle</option>
+                                    <option value="Carrera">Carrera</option>
+                                    <option value="Circular">Circular</option>
+                                    <option value="Diagonal">Diagonal</option>
+                                    <option value="Zona">Zona</option>
+                                    <option value="Transversal">Transversal</option>
+                                </select>
+                            </div>
+                            <div class="formContent">
+                                <label for="">*</label>
+                                <input type="text" name="primero"> #
+                                <input type="text" name="segundo"> -
+                                <input type="text" name="tercero">
+                            </div>
+                            <div class="formContent">
+                                <label for="barrio">Barrio</label>
+                                <input type="text" name="barrio">
+                            </div>
+                            <div class="formContent">
+                                <label for="TipoImnu">Tipo de Inmueble:</label>
+                                <select name="TipoImnu" id="TipoImnu">
+                                    <option value="si">- Selecciones el Tipo de Inmueble -</option>
+                                    <option value="Apartamento">Apartamento</option>
+                                    <option value="Casa">Casa</option>
+                                    <option value="Edificio">Edificio</option>
+                                    <option value="Hotel">Hotel</option>
+                                    <option value="Oficina">Oficina</option>
+                                </select>
+                                <input type="text" name="" id="">
+                            </div>
+                            <div class="formContent">
+                                <label for="bloque">Bloque o Interior:</label>
+                                <select name="bloque" id="bloque">
+                                    <option value="si">- Selecciones el Complemento -</option>
+                                    <option value="Manzana">Manzana</option>
+                                    <option value="Zona">Zona</option>
+                                    <option value="Bloque">Bloque</option>
+                                    <option value="Habitacion">Habitacion</option>
+                                </select>
+                                <input type="text" name="" id="">
+                            </div>
+                            <div class="formContent">
+                                <label for="observaciones">* Observaciones:</label>
+                                <textarea name="observaciones" id="observaciones" cols="35" rows="4"></textarea>
+                                Ejemplo: Toque el timbre, al lado del supermercado, etc.
+                            </div>
+                            <p class="p">* Campos obligatorios</p>
+                            <input class="input" type="submit" value="CONTINUAR">
+                        </form>
+                    </div>
+                </section>
+                <%- include('../partials/footer.ejs') %>
+        </div>
+
+    </body>
+    <script src="js/mostrarCarrito.js"></script>
+
+</html>

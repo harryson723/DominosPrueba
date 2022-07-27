@@ -1,0 +1,113 @@
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 245, 245);
+    padding-bottom: 40px;
+}
+
+.formContent {
+    display: flex;
+    margin-top: 20px;
+}
+
+.elige h1 {
+    font-size: 40px;
+}
+.elige {
+    width: 70%;
+    margin: 20px 0 15px 0;
+    text-align: left;
+}
+
+.domicilio {
+    width: 70%;
+    padding: 8px 0 8px 0;
+    text-align: left;
+    background-color: #115e87;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.domicilio b {
+    margin-left: 10px;
+}
+
+.formDiv {
+    background-color: #FFF;
+    width: 70%;
+}
+
+.formContent, .p, .input {
+    margin: 20px 0 20px 150px ;
+}
+
+.opcionConteiner {
+    margin-left: 60px;
+}
+
+.menuPizza, .menuAcompa, .menuBebida {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.menuPizza div, .menuAcompa div, .menuBebida div {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.menuPizza p, .menuAcompa p, .menuBebida p {
+    width: 200px;
+}
+
+.menuPizza img, .menuAcompa img, .menuBebida img {
+    border-radius: 5px;
+    width: 200px;
+}
+
+.menuPizza a, .menuAcompa a, .menuBebida a {
+    width: 200px;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 5px 0 5px 0;
+    padding: 5px 0 5px 0;
+    background-color:  rgb(199, 0, 0);
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+.menuPizza a:hover, .menuAcompa a:hover, .menuBebida a:hover {
+    background-color:  rgb(112, 3, 3);
+    cursor: pointer;
+}
+
+.botonPedidoB{
+    transform: scale(100%);
+    width: 300px;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 5px 0 5px 0;
+    padding: 5px 0 5px 0;
+    background-color:  rgb(199, 0, 0);
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    color: #FFF;
+}
+
+.botonPedidoB:hover {
+    background-color:  rgb(112, 3, 3);
+    cursor: pointer;
+}
+.botonPedidoB:active {
+    transform: scale(90%);
+}

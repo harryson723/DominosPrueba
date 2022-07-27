@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: One Dot Condensed Bold,Arial Narrow,Arial,Helvetica,sans-serif;
+}
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* estilos del nav */
+nav {
+    background-color: #115e87;
+    height: 75px;
+    box-shadow: 0px 0px 10px #000;
+    color: #fff;
+    font-weight: bold;
+    line-height: 10px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 15%;
+
+}
+
+.navRightPart {
+    display: flex;
+    flex-direction: row;    
+    margin-left: 10%;
+}
+
+.navRightPart {
+    margin-left: 10%;
+}
+
+.navImgLogo {
+    margin-top: 5px;
+    width: 55px;
+}
+
+li {
+    list-style: none;
+    margin-left: 20px;
+    margin-top: 8px;
+}
+
+/* estilos del header */
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #115e87;
+    margin-top: 30px;
+}
+
+header a {
+    padding: 15px 20px;
+    background-color: #e21937;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+
+.headerAD {
+    margin-left: 40px;
+}
+
+header p {
+    margin: auto 10px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.divPromo {
+    display: flex;
+}
+
+.divPromo aside {
+    display: flex;
+    flex-direction: column;
+}
+/* seccion central */
+
+.sectionConteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.sectionConteiner:nth-child(1) {
+    grid-column: 3;
+}
+.sectionConteiner:nth-child(2) {
+    grid-column: 3 / 4;
+}
+
+.sectionConteiner:nth-child(3) {
+    grid-row: 2 / 3;
+    grid-column: 3;
+}
+
+a, a:visited {
+    color: #FFF;
+    text-decoration: none;
+}
+/* */
+/* */
+/* */
+
+.oculto {
+    display: none;
+}
+
+.mostrarCarrito {
+    position: absolute;
+    background-color: #FFF;
+    color: #115e87;;
+    top: 50px;
+    right: 50px;
+    box-shadow: 0px 0px 15px #000;
+}
+
+
+.mostrarCarrito .divCarrito {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mostrarCarrito img {
+    margin-right: 10px;
+    width: 60px;
+}
+
+
+.divText {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.fa-solid:hover {
+    cursor: pointer;
+}
+
+.vacia {
+    width: 300px;
+    height: 100px;
+}
+
+
+.loginConteiner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: #0679b8;
+}
+
+.loginForm {
+    width: 400px;
+    display: flex;
+    margin: 0;
+    box-shadow: 0px 0px 20px #000;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+    
+}
+
+.formContentL {
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formContentL label {
+    margin: 0;
+}
+
+.loginForm img {
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+.loginForm input {
+    height: 30px;
+    width: 150px;
+    margin-bottom: 30px;
+}
+
+.loginForm label {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.loginForm .inputL {
+    background-color: #e21937;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    width: 150px;
+    height: 40px;
+
+}
+
+.loginForm .inputL:hover {
+    background-color: #790314;
+    cursor: pointer;
+}
+
+.conteinerT table {
+    width: 100%;
+    margin: 0;
+    border-collapse:collapse;
+}
+
+.conteinerT tr{
+    background-color: #0679b8;
+    color:#fff;
+}
+.conteinerT th{
+    background-color: #e21937;
+    color:#fff;
+    padding: 20px;
+    border-right: 1px solid #000;
+}
+
+
+.conteinerT td {
+    background-color: #0679b8;
+    color:#fff;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    text-align: center;
+}
+
+.conteinerT .productList {
+    background-color: #0679b8;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.conteinerT .productList div img {
+    width: 100px;
+}
+
+.conteinerT .productList div {
+    display: flex;
+    margin: 10px;
+
+}

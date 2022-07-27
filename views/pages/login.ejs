@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/header.ejs') %>
+
+    <body>
+        <div class="loginConteiner">
+            
+            <form action="/login" method="post" class="loginForm">
+                <img src="Img/user.png" alt="" >
+                <div class="formContentL">
+                    <label for="user">USUARIO:</label>
+                    <input type="text" name="user" class="user">
+                </div>
+                <div class="formContentL">
+                    <label for="pass">CONTRASEÑA:</label>
+                    <input type="password" name="pass" class="pass">
+                </div>
+                <div class="formContentL">
+                    <input class="inputL" type="submit" value="INGRESAR">
+                </div>
+        </form>
+        </div>
+    </body>
+    <script>
+        let datos = []
+        datos = <%-datos%>;
+   </script>
+    <script src="js/validarLogin.js"></script>
+    
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/header.ejs') %>
+
+    <body>
+        <div class="conteiner">
+            <%- include('../partials/nav.ejs') %>
+            <header>
+                <h1>EMPIEZA TU PEDIDO</h1>
+                <a href="/pedido" class="headerAD">ENTREGA A DOMICILIO</a>
+                <P>o</P>
+                <a href="/pedido">RECOGER EN TIENDA</a>
+            </header>
+            <div class="sectionConteiner">
+                <div class="divPromo">
+                    <article>
+                        <img src="Img/promo1.jpg" alt="">
+                    </article>
+                    <aside>
+                        <img src="Img/promo2.jpg" alt="">
+                        <img src="Img/promo3.jpg" alt="">
+                    </aside>
+                </div>
+                <article>
+                    <img src="Img/promo4.jpg" alt="">
+                </article>
+            </div>
+            <%- include('../partials/footer.ejs') %>
+        </div>
+    </body>
+    <script src="js/mostrarCarrito.js"></script>
+    <script>
+        let si;
+        si = <%-hecho%>;
+        if(si) alert('Pedido Realizado');
+    </script>
+</html>
